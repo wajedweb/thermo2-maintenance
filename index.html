@@ -62,6 +62,14 @@
         margin-bottom: 54px;
       }
 
+      .top-actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
       .brand {
         display: inline-flex;
         align-items: center;
@@ -103,6 +111,25 @@
         border-radius: 999px;
         background: var(--orange);
         box-shadow: 0 0 18px rgba(255, 122, 26, 0.8);
+      }
+
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 38px;
+        padding: 0 14px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.055);
+        color: #ffffff;
+        font-size: 0.9rem;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .social-link:hover {
+        border-color: rgba(255, 122, 26, 0.7);
+        color: #ffb16f;
       }
 
       .hero {
@@ -230,6 +257,28 @@
         text-decoration: none;
       }
 
+      .trust-panel {
+        justify-content: flex-start;
+      }
+
+      .trust-panel h2 {
+        margin-bottom: 12px;
+      }
+
+      .reel-frame {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: rgba(0, 0, 0, 0.36);
+      }
+
+      .reel-frame .instagram-media {
+        min-width: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+      }
+
       .details {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -311,6 +360,10 @@
           margin-bottom: 34px;
         }
 
+        .top-actions {
+          justify-content: center;
+        }
+
         .brand {
           width: 168px;
         }
@@ -340,7 +393,17 @@
             <img src="assets/thermo2-logo-cropped.png" alt="Thermo2 - Economie, Confort, Ecologie">
           </a>
 
-          <p class="status">Mise à jour sécurité en cours</p>
+          <div class="top-actions">
+            <p class="status">Mise à jour sécurité en cours</p>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/thermo2_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+          </div>
         </header>
 
         <section id="top" class="hero" aria-labelledby="page-title">
@@ -359,17 +422,31 @@
             </div>
           </div>
 
-          <aside class="contact-panel" aria-label="Contact direct">
+          <aside class="contact-panel trust-panel" aria-label="Vidéo de présentation Thermo2">
             <div>
-              <h2>Besoin d'un échange rapide ?</h2>
+              <h2>Découvrez Thermo2 en vidéo</h2>
               <p>
-                Pour une demande urgente ou un suivi en cours, vous pouvez nous joindre
-                directement par téléphone.
+                Un aperçu de notre activité pour garder le lien pendant la mise à jour
+                du site.
               </p>
-              <a class="phone" href="tel:+33223278384">02 23 27 83 84</a>
             </div>
 
-            <a class="button button-primary" href="tel:+33223278384">Appeler maintenant</a>
+            <div class="reel-frame">
+              <blockquote
+                class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/CxtqCpvopkB/"
+                data-instgrm-version="14"
+              ></blockquote>
+            </div>
+
+            <a
+              class="button button-primary"
+              href="https://www.instagram.com/reel/CxtqCpvopkB/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Voir la vidéo Instagram
+            </a>
           </aside>
         </section>
 
@@ -417,9 +494,13 @@
         </section>
 
         <footer>
-          <p>Merci pour votre compréhension. Thermo2 reste joignable pendant toute la durée de la maintenance.</p>
+          <p>
+            Merci pour votre compréhension. Thermo2 reste joignable pendant toute la durée de la maintenance.
+            <a href="https://www.instagram.com/thermo2_/" target="_blank" rel="noopener noreferrer">Suivez-nous sur Instagram</a>.
+          </p>
         </footer>
       </div>
     </main>
+    <script async src="https://www.instagram.com/embed.js"></script>
   </body>
 </html>
