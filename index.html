@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Thermo2.fr est temporairement en maintenance. Laissez vos coordonnees pour etre rappele ou appelez-nous directement.">
+    <title>Thermo2.fr - Maintenance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              glow: "0 0 80px rgba(249, 115, 22, 0.22)"
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-black text-white">
+    <main class="relative min-h-screen overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-black to-red-500/10"></div>
+      <div class="absolute left-[-80px] top-[-80px] h-80 w-80 rounded-full bg-orange-500/20 blur-3xl md:h-96 md:w-96"></div>
+      <div class="absolute bottom-[-80px] right-[-80px] h-80 w-80 rounded-full bg-red-500/20 blur-3xl md:h-96 md:w-96"></div>
+
+      <section class="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 py-12">
+        <header class="mb-8 text-center">
+          <div class="mx-auto mb-6 flex h-48 w-full max-w-sm items-center justify-center overflow-hidden rounded-3xl border border-white/20 bg-white p-4 shadow-2xl">
+            <img
+              src="assets/thermo2-logo.png"
+              alt="Thermo2 - Economie, Confort, Ecologie"
+              class="w-full max-w-[300px] translate-y-[-26px]"
+            >
+          </div>
+
+          <p class="inline-flex items-center rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-2 text-sm uppercase tracking-[0.18em] text-orange-300">
+            Mise à jour stratégique en cours
+          </p>
+        </header>
+
+        <div class="w-full max-w-4xl text-center">
+          <h2 class="mb-8 text-3xl font-bold leading-tight md:text-5xl">
+            Notre site est en cours de mise à jour.
+          </h2>
+
+          <p class="mx-auto mb-10 max-w-3xl text-lg leading-relaxed text-gray-300 md:text-xl">
+            Dans le cadre d'une amélioration majeure de nos services et de notre infrastructure,
+            notre site est actuellement en maintenance temporaire.
+            <br><br>
+            Nous restons disponibles pendant cette période : laissez-nous vos coordonnées
+            et notre équipe vous rappellera rapidement, ou contactez-nous directement par téléphone.
+          </p>
+
+          <div class="mb-12 flex flex-col justify-center gap-4 sm:flex-row">
+            <a
+              href="#lead-form"
+              class="inline-flex items-center justify-center rounded-2xl bg-orange-500 px-8 py-4 text-lg font-bold text-black shadow-lg transition duration-300 hover:bg-orange-400 focus:outline-none focus:ring-4 focus:ring-orange-400/30"
+            >
+              Laisser mes coordonnées
+            </a>
+
+            <a
+              href="tel:+33223278384"
+              class="inline-flex items-center justify-center rounded-2xl border border-orange-500 px-8 py-4 text-lg font-bold text-orange-400 transition duration-300 hover:bg-orange-500 hover:text-black focus:outline-none focus:ring-4 focus:ring-orange-400/30"
+            >
+              Appeler maintenant
+            </a>
+          </div>
+
+          <div class="mb-12 grid gap-6 md:grid-cols-2">
+            <article class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-2xl transition duration-300 hover:bg-white/10">
+              <div class="mb-4 text-4xl text-orange-400" aria-hidden="true">☎</div>
+              <h3 class="mb-4 text-2xl font-bold">Contact Direct</h3>
+              <p class="mb-6 text-gray-300">
+                Pour toute demande urgente ou information complémentaire.
+              </p>
+
+              <a
+                href="tel:+33223278384"
+                class="inline-flex w-full items-center justify-center rounded-2xl bg-orange-500 py-4 text-lg font-bold text-black shadow-lg transition duration-300 hover:bg-orange-400 focus:outline-none focus:ring-4 focus:ring-orange-400/30"
+              >
+                02 23 27 83 84
+              </a>
+            </article>
+
+            <article class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-2xl transition duration-300 hover:bg-white/10">
+              <div class="mb-4 text-4xl text-orange-400" aria-hidden="true">✉</div>
+              <h3 class="mb-4 text-2xl font-bold">Laisser vos coordonnées</h3>
+              <p class="mb-6 text-gray-300">
+                Transmettez votre demande, nous revenons vers vous rapidement.
+              </p>
+
+              <a
+                href="#lead-form"
+                class="inline-flex w-full items-center justify-center rounded-2xl border border-orange-500 py-4 text-lg font-bold text-orange-400 transition duration-300 hover:bg-orange-500 hover:text-black focus:outline-none focus:ring-4 focus:ring-orange-400/30"
+              >
+                Accéder au formulaire
+              </a>
+            </article>
+          </div>
+
+          <section id="lead-form" class="mb-12 rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-2xl md:p-12">
+            <div class="mx-auto max-w-2xl">
+              <h3 class="mb-4 text-3xl font-bold">Vos coordonnées de contact</h3>
+              <p class="mb-8 text-gray-400">
+                Indiquez vos informations et votre besoin. Votre demande sera transmise à notre équipe pour un rappel.
+              </p>
+
+              <div class="rounded-3xl border border-white/10 bg-black/40 p-6 md:p-8">
+                <p class="mb-6 text-gray-300">
+                  Le formulaire de contact s'ouvre sur une page HubSpot sécurisée afin de garantir
+                  la bonne transmission de votre demande.
+                </p>
+
+                <a
+                  href="https://share-eu1.hsforms.com/1PFXu5OyqQLGRmBNwX7rytgez4wj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex w-full items-center justify-center rounded-2xl bg-orange-500 px-6 py-4 text-lg font-bold text-black shadow-xl transition duration-300 hover:bg-orange-400 focus:outline-none focus:ring-4 focus:ring-orange-400/30"
+                >
+                  Ouvrir le formulaire de rappel
+                </a>
+
+                <p class="mt-5 text-sm text-gray-500">
+                  Vous pouvez aussi nous appeler directement au 02 23 27 83 84.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <footer class="mt-12 text-center text-sm text-gray-500">
+            <p>Nous vous remercions pour votre compréhension et votre confiance.</p>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
