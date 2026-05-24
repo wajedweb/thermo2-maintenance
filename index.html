@@ -265,18 +265,48 @@
         margin-bottom: 12px;
       }
 
-      .reel-frame {
-        overflow: hidden;
-        border: 1px solid var(--line);
-        border-radius: 22px;
-        background: rgba(0, 0, 0, 0.36);
+      .phone-mockup {
+        width: min(100%, 306px);
+        margin: 4px auto 0;
+        padding: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 38px;
+        background:
+          linear-gradient(145deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.03)),
+          #090909;
+        box-shadow: 0 24px 54px rgba(0, 0, 0, 0.4);
       }
 
-      .reel-frame .instagram-media {
+      .phone-screen {
+        position: relative;
+        overflow: hidden;
+        min-height: 520px;
+        border-radius: 28px;
+        background: #ffffff;
+      }
+
+      .phone-screen::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        z-index: 2;
+        width: 86px;
+        height: 18px;
+        transform: translateX(-50%);
+        border-radius: 999px;
+        background: #070707;
+      }
+
+      .phone-screen .instagram-media {
         min-width: 0 !important;
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 auto !important;
+      }
+
+      .phone-screen iframe {
+        border-radius: 28px !important;
       }
 
       .details {
@@ -431,12 +461,14 @@
               </p>
             </div>
 
-            <div class="reel-frame">
-              <blockquote
-                class="instagram-media"
-                data-instgrm-permalink="https://www.instagram.com/reel/CxtqCpvopkB/"
-                data-instgrm-version="14"
-              ></blockquote>
+            <div class="phone-mockup" aria-label="Aperçu vidéo Instagram Thermo2 dans un téléphone">
+              <div class="phone-screen">
+                <blockquote
+                  class="instagram-media"
+                  data-instgrm-permalink="https://www.instagram.com/reel/CxtqCpvopkB/"
+                  data-instgrm-version="14"
+                ></blockquote>
+              </div>
             </div>
 
             <a
